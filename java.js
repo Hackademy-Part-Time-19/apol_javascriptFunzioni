@@ -68,3 +68,9 @@ function filtra(listaProdotti) {
 }
 let listafiltrata=filtra(listaProdotti);
 console.log(listafiltrata);
+
+
+//Stampa Valori
+let url= "https://sitodiecommerce.com/paginaDelProdotto?idProdotto=12312312312&userId=314123&time=8999"
+let urlsplitt= url.split("?")
+console.log(urlsplitt);
