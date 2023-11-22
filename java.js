@@ -23,6 +23,7 @@ let listaProdotti = [
     },
 ]
 
+
 //Lista Alfanumerica
 let listaOrdinataNome= listaProdotti.sort(function(prodotto1,prodotto2) {
     if (prodotto1.nome < prodotto2.nome)
@@ -33,6 +34,7 @@ let listaOrdinataNome= listaProdotti.sort(function(prodotto1,prodotto2) {
 
 })
 console.log(listaOrdinataNome);
+
 
 
 //Lista Prezzo
@@ -54,7 +56,6 @@ console.log(listafiltrata);
 
 
 //Funzione normale filter
-
 function filtra(listaProdotti) {
 
     let listafiltrata=[];
@@ -74,3 +75,24 @@ console.log(listafiltrata);
 let url= "https://sitodiecommerce.com/paginaDelProdotto?idProdotto=12312312312&userId=314123&time=8999"
 let urlsplitt= url.split("?")
 console.log(urlsplitt);
+
+
+
+//Frase Palindroma con funzione
+let string = "i topi non avevano nipoti";
+var normal = string.replace(/\W/g, "").toLowerCase();
+console.log(normal);
+;
+var reverse = normal.split("").reverse().join("");
+console.log(reverse);
+
+
+function palindrome(str) {
+    var normal = str.replace(/\W/g, "").toLowerCase();
+    var reverse = normal.split("").reverse().join("");
+    var checkPalindrome = normal === reverse;
+    return checkPalindrome;
+    
+   }
+let ciao=palindrome(string)
+console.log(ciao);
